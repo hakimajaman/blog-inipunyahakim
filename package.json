@@ -1,0 +1,30 @@
+{
+  "name": "blog-inipunyahakim",
+  "version": "1.0.0",
+  "description": "deploy to blog.inipunyahakim.com",
+  "scripts": {
+    "lint": "eslint --config .eslintrc.js .",
+    "format": "eslint --fix --config .eslintrc.js",
+    "husky": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakimajaman/blog-inipunyahakim.git"
+  },
+  "author": "hakimajaman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hakimajaman/blog-inipunyahakim/issues"
+  },
+  "homepage": "https://github.com/hakimajaman/blog-inipunyahakim#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "eslint": "^8.22.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
